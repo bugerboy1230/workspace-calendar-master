@@ -10,10 +10,10 @@ const ProjectsSection = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold">Current Projects</h2>
+        <h2 className="text-xl font-semibold">현재 프로젝트</h2>
         <Button variant="link" asChild>
           <Link to="/projects" className="flex items-center text-accent">
-            View all projects
+            모든 프로젝트 보기
             <ChevronRight className="h-4 w-4 ml-1" />
           </Link>
         </Button>
