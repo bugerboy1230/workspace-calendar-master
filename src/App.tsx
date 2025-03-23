@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import Calendar from "./pages/Calendar";
 import Tasks from "./pages/Tasks";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/tasks" element={<Tasks />} />
+                <Route path="/settings" element={<Settings />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

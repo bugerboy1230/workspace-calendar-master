@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, Link } from 'react-router-dom';
 import { Calendar, ClipboardList, FolderKanban, Home, Layers, Plus, Settings, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -88,9 +88,11 @@ const Sidebar = () => {
         </ScrollArea>
         
         <div className="p-4 border-t border-border mt-auto">
-          <Button variant="ghost" className="w-full justify-start gap-2 text-sm">
-            <Settings className="h-4 w-4" />
-            Settings
+          <Button variant="ghost" className="w-full justify-start gap-2 text-sm" asChild>
+            <Link to="/settings">
+              <Settings className="h-4 w-4" />
+              Settings
+            </Link>
           </Button>
         </div>
       </div>
